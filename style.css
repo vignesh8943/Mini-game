@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 60.5%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222222ff;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  overflow: hidden;
+}
+
+.homepage {
+  background: url(gamestartpageimage.png);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.gamepage {
+  display: none;
+  height: 100vh;
+  background: url(https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1092.jpg);
+}
+
+/*LAYOUT*/
+.game-name {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  font-size: 4rem;
+}
+
+.start-button {
+  position: absolute;
+  top: 50%;
+}
+
+header {
+  height: 35vh;
+  position: relative;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 52rem;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+/*ELEMENTS STYLE*/
+
+.h1-Guess-my-number {
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  text-align: center;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+}
+
+.guess-number {
+  background: #eee;
+  color: #333;
+  width: 15rem;
+  font-size: 6rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.btw {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.4rem;
+}
+
+.again {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+
+.input-number {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+/* .btn{
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #ccc;
+} */
+
+.info {
+  margin-bottom: 5rem;
+  height: 3rem;
+}
+.label-score {
+  margin-bottom: 2rem;
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.home {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 35.5%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 35.5%;
+    box-sizing: border-box;
+  }
+  .button-85 {
+    padding: 0.6em 1em;
+    font-size: 2rem;
+  }
+  .input-number {
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 15rem;
+  }
+}
